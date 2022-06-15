@@ -1,0 +1,135 @@
+body{
+   /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(203,203,227,1) 100%, rgba(0,212,255,1) 100%);
+	/*background-color:#dbe9ee ;*/
+	background: rgb(177,177,180);
+background: linear-gradient(357deg, rgba(177,177,180,0.8456057007125891) 0%, rgba(240,242,242,1) 100%, rgba(203,203,227,1) 100%);
+}
+
+.container{
+	position: absolute;
+	text-align: center;
+	color: white;
+}
+.title1,.title2{
+	position: absolute;
+	color: lightgrey;
+	
+	
+}
+.title1
+{
+  top: 750px;
+  left: 8%;
+  font-size: 5em;
+}
+.title2{
+	top: 850px;
+	left: 20%;
+	font-size: 3em;
+}
+#imgBack{
+	margin-top:5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 90%;
+	height:800px;
+}
+#start{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 2em;
+	border-bottom-width: 2px;
+	border-bottom-color: grey;
+	border-bottom-style: solid;
+	margin-left: 240px;
+	margin-right: 240px;
+}
+#titleChildhood{
+	text-align: right;
+	margin-right: 18%;
+}
+#imgChildhood{
+	margin-left: 80px;
+	width: 400px
+	
+}
+
+.schoolText{
+	float: right;
+	width: 35%;
+	text-align: center;
+	margin-right: 80px;
+	line-height:30px ;
+}
+.space{
+	width: 100%;
+	height: 100px;
+}
+#imgAchievment{
+	float: right;
+	margin-right: 50px;
+	width:200px;
+}
+.achievementText,.achievmentList{
+	text-align: center;
+	width: 35%;
+	margin-left:30px;
+	line-height:30px ;
+}
+.wrapper{
+  height: 100px;
+  display: grid;
+  place-items: center;
+}
+
+.intro{
+	 width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+#achievementTitle{
+	margin-left: 15%;
+}
+#imgAchievment,#imgChildhood:hover{
+  transform: scale(1.1);
+  transition: all 2s;
+}
+.achievementList{
+	text-align: center;
+	margin-right: 60%;
+	line-height:30px ;
+	border-style: dashed;
+	border-color: grey;
+	border-width: 2px;
+	padding-right: 20px;
+	padding-left: 5px;
+}
+.end{
+	width: 80%;
+	height: 400px;
+	background-color: #4c4b4b;
+	color: whitesmoke;
+	border-radius: 15% 15% 0% 0%;
+	font-size: 1.5em;
+	line-height: 50px;
+	padding-top: 10%;
+	padding-right: 10%;
+	padding-left: 10%;
+}
