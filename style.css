@@ -2,8 +2,9 @@ body{
    /* background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(203,203,227,1) 100%, rgba(0,212,255,1) 100%);
 	/*background-color:#dbe9ee ;*/
+	font-family: sans-serif;
 	background: rgb(177,177,180);
-background: linear-gradient(357deg, rgba(177,177,180,0.8456057007125891) 0%, rgba(240,242,242,1) 100%, rgba(203,203,227,1) 100%);
+	background: linear-gradient(357deg, rgba(177,177,180,0.8456057007125891) 0%, rgba(240,242,242,1) 100%, rgba(203,203,227,1) 100%);
 }
 
 .container{
@@ -13,15 +14,15 @@ background: linear-gradient(357deg, rgba(177,177,180,0.8456057007125891) 0%, rgb
 }
 .title1,.title2{
 	position: absolute;
-	color: lightgrey;
+	color: whitesmoke;
 	
 	
 }
 .title1
 {
-  top: 750px;
-  left: 8%;
-  font-size: 5em;
+	top: 750px;
+	left: 8%;
+	font-size: 5em;
 }
 .title2{
 	top: 850px;
@@ -45,17 +46,19 @@ background: linear-gradient(357deg, rgba(177,177,180,0.8456057007125891) 0%, rgb
 	margin-left: 240px;
 	margin-right: 240px;
 }
-#titleChildhood{
+#titleChildhood,#laboratoryTitle{
 	text-align: right;
 	margin-right: 18%;
 }
-#imgChildhood{
+#imgChildhood,#imgLaboratory{
 	margin-left: 80px;
 	width: 400px
-	
+}
+#imgLaboratory{
+	width: 300px;
 }
 
-.schoolText{
+.schoolText,.laboratoryText{
 	float: right;
 	width: 35%;
 	text-align: center;
@@ -74,62 +77,88 @@ background: linear-gradient(357deg, rgba(177,177,180,0.8456057007125891) 0%, rgb
 .achievementText,.achievmentList{
 	text-align: center;
 	width: 35%;
-	margin-left:30px;
+	margin-left:40%;
 	line-height:30px ;
 }
 .wrapper{
-  height: 100px;
-  display: grid;
-  place-items: center;
+	height: 100px;
+	display: grid;
+	place-items: center;
 }
 
 .intro{
-	 width: 22ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
+	width: 22ch;
+	animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid;
+	font-family: monospace;
+	font-size: 2em;
 }
 
 @keyframes typing {
-  from {
-    width: 0
-  }
+	from {
+		width: 0
+	}
 }
-    
+
 @keyframes blink {
-  50% {
-    border-color: transparent
-  }
+	50% {
+		border-color: transparent
+	}
 }
 #achievementTitle{
-	margin-left: 15%;
+	margin-left: 52.5%;
 }
-#imgAchievment,#imgChildhood:hover{
-  transform: scale(1.1);
-  transition: all 2s;
+#imgLaboratory,#imgChildhood,#imgAchievment:hover{
+	transform: scale(1.1);
+	transition: all 2s;
 }
+
+
 .achievementList{
 	text-align: center;
-	margin-right: 60%;
+	margin-left: 30%;
 	line-height:30px ;
-	border-style: dashed;
-	border-color: grey;
-	border-width: 2px;
-	padding-right: 20px;
-	padding-left: 5px;
+	
 }
 .end{
 	width: 80%;
-	height: 400px;
-	background-color: #4c4b4b;
+	height: 250px;
+	background: rgb(76,75,75);
+	background: linear-gradient(356deg, rgba(76,75,75,0.8456057007125891) 0%, rgba(72,72,72,1) 62%, rgba(96,96,96,1) 100%, rgba(240,242,242,1) 100%);
 	color: whitesmoke;
-	border-radius: 15% 15% 0% 0%;
-	font-size: 1.5em;
+	font-size: 15px;
 	line-height: 50px;
-	padding-top: 10%;
+	padding-top: 5%;
 	padding-right: 10%;
 	padding-left: 10%;
+}
+a:link,a:visited {
+	background-color: ##4c4b4b;
+	color: white;
+	font-size: 15px;
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-color: white;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 25px;
+	margin-left: 40%;
+}
+
+a:hover,a:active{
+	background-color: whitesmoke;
+	color: grey;
+
+}
+#copy{
+	width: 100%;
+	height: 70px;
+	color: white;
+	background: rgb(36,36,36);
+	background: linear-gradient(356deg, rgba(36,36,36,0.8456057007125891) 0%, rgba(44,44,44,1) 69%, rgba(63,63,63,1) 100%, rgba(240,242,242,1) 100%);
+	padding-top: 5px;
 }
